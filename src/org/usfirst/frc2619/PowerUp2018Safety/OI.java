@@ -11,8 +11,9 @@
 
 package org.usfirst.frc2619.PowerUp2018Safety;
 
-import org.usfirst.frc2619.PowerUp2018Safety.commands.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import org.usfirst.frc2619.PowerUp2018Safety.commands.*;
+
 
 
 /**

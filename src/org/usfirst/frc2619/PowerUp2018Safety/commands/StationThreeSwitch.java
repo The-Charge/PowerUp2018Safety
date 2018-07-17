@@ -11,6 +11,7 @@
 
 package org.usfirst.frc2619.PowerUp2018Safety.commands;
 
+import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.command.ConditionalCommand;
 import org.usfirst.frc2619.PowerUp2018Safety.Robot;
 
@@ -30,6 +31,6 @@ public class StationThreeSwitch extends ConditionalCommand {
 
     @Override
     protected boolean condition(){
-        return false;//TODO: Auto Generated method stub
+        return DriverStation.getInstance().getGameSpecificMessage().charAt(0) == 'L';//TODO: Auto Generated method stub
     }
 }

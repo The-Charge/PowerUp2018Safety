@@ -37,6 +37,9 @@ public class OverrideSpeedHalf extends Command {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
+    	if (Robot.driveTrain.quarterSpeed)
+    		Robot.driveTrain.quarterSpeed = false;
+    	Robot.driveTrain.halfSpeed = true;
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -53,11 +56,13 @@ public class OverrideSpeedHalf extends Command {
     // Called once after isFinished returns true
     @Override
     protected void end() {
+    	Robot.driveTrain.halfSpeed = false;
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     @Override
     protected void interrupted() {
+    	end();
     }
 }

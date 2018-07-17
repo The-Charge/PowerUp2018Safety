@@ -37,6 +37,12 @@ public class InvertDrive extends InstantCommand {
     // Called once when this command runs
     @Override
     protected void initialize() {
+    	if (Robot.driveTrain.isReversed) {
+			Robot.driveTrain.isReversed = false;
+		} 
+    	else {
+			Robot.driveTrain.isReversed = true;
+		}
     }
 
 }

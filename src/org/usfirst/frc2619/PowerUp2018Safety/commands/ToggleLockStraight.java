@@ -37,6 +37,11 @@ public class ToggleLockStraight extends InstantCommand {
     // Called once when this command runs
     @Override
     protected void initialize() {
+    	if (Robot.driveTrain.driveLocked == false) {
+    		Robot.driveTrain.driveLocked = true;
+    	} else {
+    		Robot.driveTrain.driveLocked = false;
+    	}
     }
 
 }

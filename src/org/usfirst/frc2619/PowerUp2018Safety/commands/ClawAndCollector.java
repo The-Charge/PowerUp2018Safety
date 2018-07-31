@@ -13,8 +13,8 @@ package org.usfirst.frc2619.PowerUp2018Safety.commands;
 
 import edu.wpi.first.wpilibj.command.CommandGroup;
 
-import org.usfirst.frc2619.PowerUp2018.commands.CloseClaw;
-import org.usfirst.frc2619.PowerUp2018.commands.RunCollector;
+import org.usfirst.frc2619.PowerUp2018Safety.commands.CloseClaw;
+import org.usfirst.frc2619.PowerUp2018Safety.commands.RunCollector;
 import org.usfirst.frc2619.PowerUp2018Safety.subsystems.*;
 
 /**

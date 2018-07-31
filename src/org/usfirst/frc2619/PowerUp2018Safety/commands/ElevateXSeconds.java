@@ -42,12 +42,12 @@ public class ElevateXSeconds extends Command {
     protected void initialize() {
     	this.setTimeout(m_time);
     	Robot.elevator.brakeOff();
+    	Robot.elevator.set(0.5);
     }
 
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-    	Robot.elevator.runMotorFwd();
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -66,5 +66,6 @@ public class ElevateXSeconds extends Command {
     // subsystems is scheduled to run
     @Override
     protected void interrupted() {
+    	end();
     }
 }

@@ -89,15 +89,15 @@ public class OI {
         buttonBox = new Joystick(2);
         
         elevateToScaleBtn = new JoystickButton(buttonBox, 9);
-        elevateToScaleBtn.whenPressed(new ElevateToXPositionMotionMagic(0.75));
+        elevateToScaleBtn.whenPressed(new ElevateToXPositionMotionMagic(0.4));
         climbUpBtn = new JoystickButton(buttonBox, 7);
         climbUpBtn.whileHeld(new ClimbUp());
         elevateToSwitchBtn = new JoystickButton(buttonBox, 10);
-        elevateToSwitchBtn.whenPressed(new ElevateToXPositionMotionMagic(0.4));
+        elevateToSwitchBtn.whenPressed(new ElevateToXPositionMotionMagic(0.3));
         elevateToMinBtn = new JoystickButton(buttonBox, 12);
         elevateToMinBtn.whenPressed(new ElevateToXPositionMotionMagic(0.13));
         elevateToMaxBtn = new JoystickButton(buttonBox, 11);
-        elevateToMaxBtn.whenPressed(new ElevateToXPositionMotionMagic(1));
+        elevateToMaxBtn.whenPressed(new ElevateToXPositionMotionMagic(0.5));
         lowerShoulderBtn = new JoystickButton(buttonBox, 3);
         lowerShoulderBtn.whenPressed(new LowerShoulder());
         raiseShoulderBtn = new JoystickButton(buttonBox, 3);
@@ -111,7 +111,7 @@ public class OI {
         overrideUpBtn = new JoystickButton(buttonBox, 6);
         overrideUpBtn.whenPressed(new OverrideElevator(0.5));
         runCollectorReverseSlowBtn = new JoystickButton(buttonBox, 5);
-        runCollectorReverseSlowBtn.whenPressed(new RunCollector(-0.13));
+        runCollectorReverseSlowBtn.whenPressed(new RunCollector(-0.08));
         stopCollectorBtn = new JoystickButton(buttonBox, 2);
         stopCollectorBtn.whenReleased(new StopCollector());
         closeClawBtn = new JoystickButton(buttonBox, 8);
@@ -123,7 +123,7 @@ public class OI {
         lowerShoulderAndCollectBtn = new JoystickButton(buttonBox, 2);
         lowerShoulderAndCollectBtn.whenPressed(new LowerShoulderAndCollect());
         runCollectorReverseFastBtn = new JoystickButton(buttonBox, 1);
-        runCollectorReverseFastBtn.whenPressed(new RunCollector(-.65));
+        runCollectorReverseFastBtn.whenPressed(new RunCollector(-.25));
         rightJoystick = new Joystick(1);
         
         climbDownBtn = new JoystickButton(rightJoystick, 7);

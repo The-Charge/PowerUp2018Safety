@@ -110,8 +110,8 @@ public class DriveTrain extends Subsystem {
     }
     
     public void run(double l, double r) {
-    	double leftSpeed = l;
-    	double rightSpeed = r;
+    	double leftSpeed = l*0.75;
+    	double rightSpeed = r*0.75;
     	
     	if (quarterSpeed) {
 	    	//if (Robot.elevator.wasForward) {
